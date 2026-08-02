@@ -9,7 +9,8 @@ def run(cmd):
 print("\n=== Cloudflare WARP ===")
 print("1. Connect")
 print("2. Disconnect")
-print("3. Exit")
+print("3. Status")
+print("4. Exit")
 
 choice = input("\nEnter choice: ").strip()
 
@@ -18,7 +19,8 @@ if choice == "1":
 elif choice == "2":
     print(run("warp-cli disconnect"))
 elif choice == "3":
+    print(run("warp-cli status"))
+elif choice == "4":
     sys.exit()
 else:
     print("Invalid choice")
-    
